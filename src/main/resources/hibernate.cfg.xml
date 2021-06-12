@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- H2 DB config -->
+		<property name="connection.driver_class">org.h2.Driver</property>
+		<property name="dialect">org.hibernate.dialect.H2Dialect</property>
+		<property name="connection.url">jdbc:h2:mem:ecommercedb</property>
+		<property name="connection.username">sa</property>
+		<property name="connection.password"></property>
+		<property name="show_sql">true</property>
+		<property name="hbm2ddl.auto">create</property>
+		<mapping class="com.tomtom.ecommerce.entities.Order" />
+		<mapping class="com.tomtom.ecommerce.entities.Product" />
+		<mapping class="com.tomtom.ecommerce.entities.User" />
+		<mapping class="com.tomtom.ecommerce.entities.Cart" />
+	</session-factory>
+</hibernate-configuration>
