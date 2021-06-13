@@ -10,7 +10,9 @@ I have written code as per instructions.
 6. Payment gateway Integration code is not written, but we can do as needed
 7. we can have custom logger files if needed
 8. I have created Entities in entities package, which has relationships to each other
+9. I have not used different data transfer objects/beans for data transfer, I used same VO/entities. This should be done with dto beans
+
 
 FINALLY,
-I would say, there are many things that I can do here, but as a part of assignment there are required things only [Like skeleton].
+I would say, that there are many things that I can do here, but as a part of assignment there are required things only [Like skeleton].
 I can use Different Design patterns, LRU cache, schedulers, Hibernate second level cache if needed.
